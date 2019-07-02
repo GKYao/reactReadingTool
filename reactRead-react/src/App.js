@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Sky from 'react-sky';
-import banana from './Components/Pics/banana.png';
-import duck from './Components/Pics/duck.png';
-import star from './Components/Pics/star.png';
-import mouse from './Components/Pics/mouse.png';
+// import Sky from 'react-sky';
+// import banana from './Components/Pics/banana.png';
+// import duck from './Components/Pics/duck.png';
+// import star from './Components/Pics/star.png';
+// import mouse from './Components/Pics/mouse.png';
 import Navigation from './Components/Navigation/Navigation';
 import ArticleBox from './Components/ArticleBox/ArticleBox';
 import SignIn from './Components/SignIn/SignIn';
@@ -12,12 +12,12 @@ import Register from './Components/Register/Register';
 import Article from './Components/Article/Article';
 import Profile from './Components/Profile/Profile';
 
-const skyParam={
-    0: banana,
-    1: duck,
-    2: star,
-    3: mouse,
-};
+// const skyParam={
+//     0: banana,
+//     1: duck,
+//     2: star,
+//     3: mouse,
+// };
 
 
 const initialState = {
@@ -104,13 +104,15 @@ class App extends Component {
     if(reading===''){
     return (
       <div className="App">
+{/*         
         <Sky
           images={skyParam}
-          how={150} /* Pass the number of images Sky will render chosing randomly */
-          time={20} /* time of animation */
-          size={'100px'} /* size of the rendered images */
-          background={'palettedvioletred'} /* color of background */
-        />
+          how={150} 
+          time={20} 
+          size={'100px'} 
+          background={'palettedvioletred'} 
+        /> */}
+
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
         { route === 'home'
           ?
